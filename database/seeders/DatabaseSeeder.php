@@ -2,9 +2,7 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-
 use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
@@ -21,18 +19,17 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
+        // \App\Models\User::create([
+        //     'name'      =>'Admin Al Arifin',
+        //     'email'     =>'al.arifin@fic10.com',
+        //     'password'  => Hash::make('12345678'),
+        //     'roles'     =>'ADMIN',
+        //     'phone'     =>'08123456789',
+        // ]);
 
-        \App\Models\User::create([
-            'name'      =>'Admin Al Arifin',
-            'email'     =>'al.arifin@fic10.com',
-            'password'  => Hash::make('12345678'),
-            'roles'     =>'ADMIN',
-            'phone'     =>'08123456789',
+        $this->call([
+            UserSeeder::class,
+            SoalSeeder::class,
         ]);
     }
-
-
-    // $this->call([
-    //     UserSeeder::class,
-    // ]);
 }

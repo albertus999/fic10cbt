@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\SoalController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +20,7 @@ Route::get('/', function () {
 });
 
 // routes/web.php
-Route::get('/users', 'UserController@index')->name('user.index');
+Route::get('/users', 'UserController@index')->name('users.index');
 
 
 Route::middleware(['auth'])->group(function () {
@@ -29,6 +30,10 @@ Route::middleware(['auth'])->group(function () {
 
     // Route::resource('user', UserController::class);
     Route::resource('users', UserController::class);
+    Route::resource('soals', SoalController::class);
+
+    // Route::get('/soals', [SoalController::class, 'index'])->name('soals.index');
+
 });
 
 
