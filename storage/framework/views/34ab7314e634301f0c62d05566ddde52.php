@@ -1,25 +1,22 @@
-<?php $__env->startSection('title', 'Bank Soal'); ?>
+<?php $__env->startSection('title', 'Users'); ?>
 
 <?php $__env->startPush('style'); ?>
     <!-- CSS Libraries -->
-    <link rel="stylesheet"
-        href="<?php echo e(asset('library/selectric/public/selectric.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('library/selectric/public/selectric.css')); ?>">
 <?php $__env->stopPush(); ?>
-
 
 <?php $__env->startSection('main'); ?>
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Bank Soal</h1>
+                <h1>Users</h1>
                 <div class="section-header-button">
-                    <a href="<?php echo e(route('users.create')); ?>"
-                        class="btn btn-primary">Add New</a>
+                    <a href="<?php echo e(route('users.create')); ?>" class="btn btn-primary">Add New</a>
                 </div>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                    <div class="breadcrumb-item"><a href="#">Soal</a></div>
-                    <div class="breadcrumb-item">All Soal</div>
+                    <div class="breadcrumb-item"><a href="#">Users</a></div>
+                    <div class="breadcrumb-item">All Users</div>
                 </div>
             </div>
             <div class="section-body">
@@ -28,9 +25,9 @@
                         <?php echo $__env->make('layouts.alert', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                     </div>
                 </div>
-                <h2 class="section-title">Soal</h2>
+                <h2 class="section-title">Users</h2>
                 <p class="section-lead">
-                    You can manage all soal, such as editing, deleting and more.
+                    You can manage all Users, such as editing, deleting and more.
                 </p>
 
 
@@ -52,10 +49,7 @@
                                 <div class="float-right">
                                     <form method="GET" action="<?php echo e(route('users.index')); ?>">
                                         <div class="input-group">
-                                            <input type="text"
-                                                class="form-control"
-                                                placeholder="Search"
-                                                name="name">
+                                            <input type="text" class="form-control" placeholder="Search" name="name">
                                             <div class="input-group-append">
                                                 <button class="btn btn-primary"><i class="fas fa-search"></i></button>
                                             </div>
@@ -69,63 +63,54 @@
                                     <table class="table-striped table">
                                         <tr>
 
-                                            <th>id</th>
-                                            <th>Soal</th>
-                                            <th>Jawaban A</th>
-                                            <th>Jawaban B</th>
-                                            <th>Jawaban C</th>
-                                            <th>Jawaban D</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>Created At</th>
+                                            <th>Action</th>
                                         </tr>
+                                        <?php $__currentLoopData = $users; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                            <tr>
 
-                                    <?php $__currentLoopData = $soals; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $soal): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                        <tr>
+                                                <td><?php echo e($user->name); ?>
 
-                                            <td><?php echo e($soal->id); ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo e($user->email); ?>
 
-                                            </td>
-                                            <td><?php echo e($soal->pertanyaan); ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo e($user->phone); ?>
 
-                                            </td>
-                                            <td><?php echo e($soal->jawaban_a); ?>
+                                                </td>
+                                                <td><?php echo e($user->created_at); ?></td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href='<?php echo e(route('users.edit', $user->id)); ?>'
+                                                            class="btn btn-sm btn-info btn-icon">
+                                                            <i class="fas fa-edit"></i>
+                                                            Edit
+                                                        </a>
 
-                                            </td>
-                                            <td><?php echo e($soal->jawaban_b); ?>
-
-                                            </td>
-                                            <td><?php echo e($soal->jawaban_c); ?>
-
-                                            </td>
-                                            <td><?php echo e($soal->jawaban_d); ?>
-
-                                            </td>
-                                            <td>
-                                                <div class="d-flex justify-content-center">
-                                                    <a href='<?php echo e(route('users.edit', $user->id)); ?>'
-                                                        class="btn btn-sm btn-info btn-icon">
-                                                        <i class="fas fa-edit"></i>
-                                                        Edit
-                                                    </a>
-
-                                                    <form action="<?php echo e(route('users.destroy', $user->id)); ?>" method="POST"
-                                                        class="ml-2">
-                                                        <input type="hidden" name="_method" value="DELETE" />
-                                                        <input type="hidden" name="_token"
-                                                            value="<?php echo e(csrf_token()); ?>" />
-                                                        <button class="btn btn-sm btn-danger btn-icon confirm-delete">
-                                                            <i class="fas fa-times"></i> Delete
-                                                        </button>
-                                                    </form>
-                                                </div>
-                                            </td>
-
-                                        </tr>
-                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                        <form action="<?php echo e(route('users.destroy', $user->id)); ?>" method="POST"
+                                                            class="ml-2">
+                                                            <input type="hidden" name="_method" value="DELETE" />
+                                                            <input type="hidden" name="_token"
+                                                                value="<?php echo e(csrf_token()); ?>" />
+                                                            <button class="btn btn-sm btn-danger btn-icon confirm-delete">
+                                                                <i class="fas fa-times"></i> Delete
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
 
                                     </table>
                                 </div>
                                 <div class="float-right">
-                                    <?php echo e($users->withQueryString()); ?>
+                                    <?php echo e($users->withQueryString()->links()); ?>
 
                                 </div>
                             </div>
