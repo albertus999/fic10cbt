@@ -41,7 +41,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::uQ8uf5aPIeO99c0N',
+            '_route' => 'generated::DPLeLm9cSHkgKiEQ',
           ),
           1 => NULL,
           2 => 
@@ -151,7 +151,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::KEl7N3fmnZ0lL6Qd',
+            '_route' => 'generated::Z4rfqGZfByInqoA8',
           ),
           1 => NULL,
           2 => 
@@ -208,7 +208,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::LLqbZK8WvsLui88p',
+            '_route' => 'generated::QwG2nHFiLoE4XBtH',
           ),
           1 => NULL,
           2 => 
@@ -281,7 +281,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::6mxR2mVwfCHqZv1O',
+            '_route' => 'generated::1PBuvNxxJXY8Ezfa',
           ),
           1 => NULL,
           2 => 
@@ -411,7 +411,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::KWtEQrzFqbaq07FA',
+            '_route' => 'generated::U4V30opglcR7QBtv',
           ),
           1 => NULL,
           2 => 
@@ -508,7 +508,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::BfeycZT5w73vgdBZ',
+            '_route' => 'generated::0xiWkgA98GnfFMUp',
           ),
           1 => NULL,
           2 => 
@@ -528,7 +528,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::W96zIaMJd9kmWxNK',
+            '_route' => 'generated::ObmmJtgaGivCfGFZ',
           ),
           1 => NULL,
           2 => 
@@ -547,7 +547,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ZkRfncOWu8p1GFnH',
+            '_route' => 'generated::3v3QD8nmPhSvgjIx',
           ),
           1 => NULL,
           2 => 
@@ -566,7 +566,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::K7gyaVs93XtWJsdp',
+            '_route' => 'generated::LZsyEn2Rn544wyaJ',
           ),
           1 => NULL,
           2 => 
@@ -585,7 +585,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::jCSO6SQ42UvDAYhh',
+            '_route' => 'generated::D1kxlRM1AYSpa0zr',
           ),
           1 => NULL,
           2 => 
@@ -604,7 +604,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::6IVLL9We5TEfjAPY',
+            '_route' => 'generated::rpoVKxIVCJkZYiiJ',
           ),
           1 => NULL,
           2 => 
@@ -624,7 +624,79 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::aBt2THkrMppm2VmV',
+            '_route' => 'generated::dyUCuQmGDG8dw8lS',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/contents' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contents.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contents.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/materis' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'materis.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'materis.store',
           ),
           1 => NULL,
           2 => 
@@ -643,7 +715,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::LsYcfbE0V4Nwfcgx',
+            '_route' => 'generated::LeB0RV0bsMm4QQs3',
           ),
           1 => NULL,
           2 => 
@@ -792,7 +864,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/reset\\-password/([^/]++)(*:32)|/users/([^/]++)(?|(*:57)|/edit(*:69)|(*:76))|/soals/([^/]++)(?|(*:102)|/edit(*:115)|(*:123)))/?$}sDu',
+      0 => '{^(?|/reset\\-password/([^/]++)(*:32)|/api/(?|contents/([^/]++)(?|(*:67))|materis/([^/]++)(?|(*:94)))|/users/([^/]++)(?|(*:121)|/edit(*:134)|(*:142))|/soals/([^/]++)(?|(*:169)|/edit(*:182)|(*:190)))/?$}sDu',
     ),
     3 => 
     array (
@@ -819,7 +891,131 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      57 => 
+      67 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contents.show',
+          ),
+          1 => 
+          array (
+            0 => 'content',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contents.update',
+          ),
+          1 => 
+          array (
+            0 => 'content',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contents.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'content',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      94 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'materis.show',
+          ),
+          1 => 
+          array (
+            0 => 'materi',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'materis.update',
+          ),
+          1 => 
+          array (
+            0 => 'materi',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'materis.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'materi',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      121 => 
       array (
         0 => 
         array (
@@ -842,7 +1038,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      69 => 
+      134 => 
       array (
         0 => 
         array (
@@ -865,7 +1061,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      76 => 
+      142 => 
       array (
         0 => 
         array (
@@ -907,7 +1103,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      102 => 
+      169 => 
       array (
         0 => 
         array (
@@ -930,7 +1126,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      115 => 
+      182 => 
       array (
         0 => 
         array (
@@ -953,7 +1149,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      123 => 
+      190 => 
       array (
         0 => 
         array (
@@ -1049,7 +1245,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::uQ8uf5aPIeO99c0N' => 
+    'generated::DPLeLm9cSHkgKiEQ' => 
     array (
       'methods' => 
       array (
@@ -1072,7 +1268,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::uQ8uf5aPIeO99c0N',
+        'as' => 'generated::DPLeLm9cSHkgKiEQ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1318,7 +1514,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::KEl7N3fmnZ0lL6Qd' => 
+    'generated::Z4rfqGZfByInqoA8' => 
     array (
       'methods' => 
       array (
@@ -1340,7 +1536,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::KEl7N3fmnZ0lL6Qd',
+        'as' => 'generated::Z4rfqGZfByInqoA8',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1432,7 +1628,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::LLqbZK8WvsLui88p' => 
+    'generated::QwG2nHFiLoE4XBtH' => 
     array (
       'methods' => 
       array (
@@ -1455,7 +1651,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::LLqbZK8WvsLui88p',
+        'as' => 'generated::QwG2nHFiLoE4XBtH',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1587,7 +1783,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::6mxR2mVwfCHqZv1O' => 
+    'generated::1PBuvNxxJXY8Ezfa' => 
     array (
       'methods' => 
       array (
@@ -1610,7 +1806,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::6mxR2mVwfCHqZv1O',
+        'as' => 'generated::1PBuvNxxJXY8Ezfa',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1863,7 +2059,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::KWtEQrzFqbaq07FA' => 
+    'generated::U4V30opglcR7QBtv' => 
     array (
       'methods' => 
       array (
@@ -1886,7 +2082,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::KWtEQrzFqbaq07FA',
+        'as' => 'generated::U4V30opglcR7QBtv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2048,7 +2244,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::BfeycZT5w73vgdBZ' => 
+    'generated::0xiWkgA98GnfFMUp' => 
     array (
       'methods' => 
       array (
@@ -2071,7 +2267,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::BfeycZT5w73vgdBZ',
+        'as' => 'generated::0xiWkgA98GnfFMUp',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2087,7 +2283,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::W96zIaMJd9kmWxNK' => 
+    'generated::ObmmJtgaGivCfGFZ' => 
     array (
       'methods' => 
       array (
@@ -2107,7 +2303,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::W96zIaMJd9kmWxNK',
+        'as' => 'generated::ObmmJtgaGivCfGFZ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2123,7 +2319,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ZkRfncOWu8p1GFnH' => 
+    'generated::3v3QD8nmPhSvgjIx' => 
     array (
       'methods' => 
       array (
@@ -2143,7 +2339,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::ZkRfncOWu8p1GFnH',
+        'as' => 'generated::3v3QD8nmPhSvgjIx',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2159,7 +2355,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::K7gyaVs93XtWJsdp' => 
+    'generated::LZsyEn2Rn544wyaJ' => 
     array (
       'methods' => 
       array (
@@ -2180,7 +2376,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::K7gyaVs93XtWJsdp',
+        'as' => 'generated::LZsyEn2Rn544wyaJ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2196,7 +2392,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::jCSO6SQ42UvDAYhh' => 
+    'generated::D1kxlRM1AYSpa0zr' => 
     array (
       'methods' => 
       array (
@@ -2217,7 +2413,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::jCSO6SQ42UvDAYhh',
+        'as' => 'generated::D1kxlRM1AYSpa0zr',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2233,7 +2429,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::6IVLL9We5TEfjAPY' => 
+    'generated::rpoVKxIVCJkZYiiJ' => 
     array (
       'methods' => 
       array (
@@ -2255,7 +2451,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::6IVLL9We5TEfjAPY',
+        'as' => 'generated::rpoVKxIVCJkZYiiJ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2271,7 +2467,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::aBt2THkrMppm2VmV' => 
+    'generated::dyUCuQmGDG8dw8lS' => 
     array (
       'methods' => 
       array (
@@ -2292,7 +2488,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::aBt2THkrMppm2VmV',
+        'as' => 'generated::dyUCuQmGDG8dw8lS',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2308,7 +2504,383 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::LsYcfbE0V4Nwfcgx' => 
+    'contents.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/contents',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'contents.index',
+        'uses' => 'App\\Http\\Controllers\\Api\\ContentController@index',
+        'controller' => 'App\\Http\\Controllers\\Api\\ContentController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contents.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/contents',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'contents.store',
+        'uses' => 'App\\Http\\Controllers\\Api\\ContentController@store',
+        'controller' => 'App\\Http\\Controllers\\Api\\ContentController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contents.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/contents/{content}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'contents.show',
+        'uses' => 'App\\Http\\Controllers\\Api\\ContentController@show',
+        'controller' => 'App\\Http\\Controllers\\Api\\ContentController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contents.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/contents/{content}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'contents.update',
+        'uses' => 'App\\Http\\Controllers\\Api\\ContentController@update',
+        'controller' => 'App\\Http\\Controllers\\Api\\ContentController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contents.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/contents/{content}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'contents.destroy',
+        'uses' => 'App\\Http\\Controllers\\Api\\ContentController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Api\\ContentController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'materis.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/materis',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'materis.index',
+        'uses' => 'App\\Http\\Controllers\\Api\\MateriController@index',
+        'controller' => 'App\\Http\\Controllers\\Api\\MateriController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'materis.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/materis',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'materis.store',
+        'uses' => 'App\\Http\\Controllers\\Api\\MateriController@store',
+        'controller' => 'App\\Http\\Controllers\\Api\\MateriController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'materis.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/materis/{materi}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'materis.show',
+        'uses' => 'App\\Http\\Controllers\\Api\\MateriController@show',
+        'controller' => 'App\\Http\\Controllers\\Api\\MateriController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'materis.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/materis/{materi}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'materis.update',
+        'uses' => 'App\\Http\\Controllers\\Api\\MateriController@update',
+        'controller' => 'App\\Http\\Controllers\\Api\\MateriController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'materis.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/materis/{materi}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'auth:sanctum',
+        ),
+        'as' => 'materis.destroy',
+        'uses' => 'App\\Http\\Controllers\\Api\\MateriController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Api\\MateriController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::LeB0RV0bsMm4QQs3' => 
     array (
       'methods' => 
       array (
@@ -2330,7 +2902,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::LsYcfbE0V4Nwfcgx',
+        'as' => 'generated::LeB0RV0bsMm4QQs3',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2401,7 +2973,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:60:"function () {
         return \\view(\'pages.dashboard\');
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000005970000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000009510000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
