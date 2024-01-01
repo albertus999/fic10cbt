@@ -54,13 +54,13 @@ class UjianController extends Controller
     //create ujian
     public function createUjian(Request $request)
     {
-        // get 20 soal angka random unique
+        // get 25 soal angka random unique
 
-        $soalAngka = Soal::where('kategori', 'Numeric')->inRandomOrder()->limit(20)->get();
-        // get 20 soal verbal random
-        $soalVerbal = Soal::where('kategori', 'Verbal')->inRandomOrder()->limit(20)->get();
-        // get 20 soal logika random
-        $soalLogika = Soal::where('kategori', 'Logika')->inRandomOrder()->limit(20)->get();
+        $soalAngka = Soal::where('kategori', 'Numeric')->inRandomOrder()->limit(25)->get();
+        // get 25 soal verbal random
+        $soalVerbal = Soal::where('kategori', 'Verbal')->inRandomOrder()->limit(25)->get();
+        // get 25 soal logika random
+        $soalLogika = Soal::where('kategori', 'Logika')->inRandomOrder()->limit(25)->get();
 
         //create ujian
         $ujian = Ujian::create([
