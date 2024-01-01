@@ -13,7 +13,7 @@ class UjianSeeder extends Seeder
     public function run(): void
     {
         \App\Models\Ujian::factory()
-            ->count(20)
+            ->count(25)
             ->create();
     }
 }
