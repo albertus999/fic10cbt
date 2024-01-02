@@ -165,7 +165,7 @@ class UjianController extends Controller
          $ujian = Ujian::where('user_id', $request->user()->id)->first();
          if (!$ujian) {
             return response()->json([
-                'message' => 'Ujian tidak ditemukan',
+                'message' => 'Ujian tidak ditemukan.',
                 'data' => [],
             ], 200);
         }
