@@ -54,13 +54,13 @@ class UjianController extends Controller
     //create ujian
     public function createUjian(Request $request)
     {
-        // get 25 soal angka random unique
+        // get 20 soal angka random unique
 
-        $soalAngka = Soal::where('kategori', 'Numeric')->inRandomOrder()->limit(25)->get();
-        // get 25 soal verbal random
-        $soalVerbal = Soal::where('kategori', 'Verbal')->inRandomOrder()->limit(25)->get();
-        // get 25 soal logika random
-        $soalLogika = Soal::where('kategori', 'Logika')->inRandomOrder()->limit(25)->get();
+        $soalAngka = Soal::where('kategori', 'Numeric')->inRandomOrder()->limit(20)->get();
+        // get 20 soal verbal random
+        $soalVerbal = Soal::where('kategori', 'Verbal')->inRandomOrder()->limit(20)->get();
+        // get 20 soal logika random
+        $soalLogika = Soal::where('kategori', 'Logika')->inRandomOrder()->limit(20)->get();
 
         //create ujian
         $ujian = Ujian::create([
@@ -99,7 +99,7 @@ class UjianController extends Controller
         $ujian = Ujian::where('user_id', $request->user()->id)->first();
         if (!$ujian) {
             return response()->json([
-                'message' => 'Ujian tidak ditemukan.',
+                'message' => 'Ujian tidak ditemukan',
                 'data' => [],
             ], 200);
         }
@@ -122,11 +122,6 @@ class UjianController extends Controller
             'data' => SoalResource::collection($soal),
         ]);
     }
-        return response()->json([
-            'message' => 'Berhasil mendapatkan soal',
-            'data' => SoalResource::collection($soal),
-        ]);
-    }
 
     //jawab soal
     public function jawabSoal(Request $request)
@@ -138,6 +133,7 @@ class UjianController extends Controller
 
 
         $ujian = Ujian::where('user_id', $request->user()->id)->first();
+        //if ujian not found return empty
         if (!$ujian) {
             return response()->json([
                 'message' => 'Ujian tidak ditemukan',
@@ -167,56 +163,55 @@ class UjianController extends Controller
         return response()->json([
             'message' => 'Berhasil simpan jawaban',
             'jawaban' => $ujianSoalList->kebenaran,
-        ]);
+        ], 200);
     }
 
-     //hitung nilai ujian by kategori
-     public function hitungNilaiUjianByKategori(Request $request)
-     {
-         $kategori = $request->kategori;
-         $ujian = Ujian::where('user_id', $request->user()->id)->first();
-         if (!$ujian) {
+    //hitung nilai ujian by kategori
+    public function hitungNilaiUjianByKategori(Request $request)
+    {
+        $kategori = $request->kategori;
+        $ujian = Ujian::where('user_id', $request->user()->id)->first();
+        if (!$ujian) {
             return response()->json([
-                'message' => 'Ujian tidak ditemukan.',
+                'message' => 'Ujian tidak ditemukan',
                 'data' => [],
             ], 200);
         }
-         $ujianSoalList = UjianSoalList::where('ujian_id', $ujian->id)->get();
-         //ujiansoallist by kategori
-         $ujianSoalList = $ujianSoalList->filter(function ($value, $key) use ($kategori) {
-             return $value->soal->kategori == $kategori;
-         });
+        $ujianSoalList = UjianSoalList::where('ujian_id', $ujian->id)->get();
+        //ujiansoallist by kategori
+        $ujianSoalList = $ujianSoalList->filter(function ($value, $key) use ($kategori) {
+            return $value->soal->kategori == $kategori;
+        });
 
-         //hitung nilai
-         $totalBenar = $ujianSoalList->where('kebenaran', true)->count();
-         $totalSoal = $ujianSoalList->count();
-         $nilai = ($totalBenar / $totalSoal) * 100;
+        //hitung nilai
+        $totalBenar = $ujianSoalList->where('kebenaran', true)->count();
+        $totalSoal = $ujianSoalList->count();
+        $nilai = ($totalBenar / $totalSoal) * 100;
 
-         $kategori_field = 'nilai_verbal';
-         $status_field = 'status_verbal';
-         $timer_field = 'timer_verbal';
-         if ($kategori == 'Numeric') {
-             $kategori_field = 'nilai_angka';
-             $status_field = 'status_angka';
-             $timer_field = 'timer_angka';
-         } else if ($kategori == 'Logika') {
-             $kategori_field = 'nilai_logika';
-             $status_field = 'status_logika';
-             $timer_field = 'timer_logika';
-         }
+        $kategori_field = 'nilai_verbal';
+        $status_field = 'status_verbal';
+        $timer_field = 'timer_verbal';
+        if ($kategori == 'Numeric') {
+            $kategori_field = 'nilai_angka';
+            $status_field = 'status_angka';
+            $timer_field = 'timer_angka';
+        } else if ($kategori == 'Logika') {
+            $kategori_field = 'nilai_logika';
+            $status_field = 'status_logika';
+            $timer_field = 'timer_logika';
+        }
 
-         $ujian->update([
-             $kategori_field => $nilai,
-             $status_field => 'done',
-             $timer_field => 0,
-         ]);
+        $ujian->update([
+            $kategori_field => $nilai,
+            $status_field => 'done',
+            $timer_field => 0,
+        ]);
 
-         dd($ujian);
+        dd($ujian);
 
-         return response()->json([
-             'message' => 'Berhasil mendapatkan nilai',
-             'nilai' => $nilai,
-         ], 200);
-
-}
+        return response()->json([
+            'message' => 'Berhasil mendapatkan nilai',
+            'nilai' => $nilai,
+        ], 200);
+    }
 }
